@@ -18,15 +18,15 @@
                                      <h5><?= $buku->penerbit ?></h5> 
                                      <h5><?= substr($buku->tahun_terbit, 0, 4) ?></h5> 
                                      <p> 
-                                         <?php 
-                                         if ($buku->stok < 1) { 
-                                             echo "<i class='btn btn-outlineprimary fas fw fa-shopping-cart'> Booking&nbsp;&nbsp 0</i>"; 
-                                         } else { 
-                                             echo "<a class='btn btn-outlineprimary fas fw fa-shoppingcart' href='" . base_url('booking/tambahBooking/' . $buku->id) . "'> Booking</a>"; 
-                                         } 
-                                         ?> 
+                                     <?php
+                                        if ($buku->stok < 1) {
+                                            echo "<i class='btn btn-outline-primary fas fa-shopping-cart'> Booking&nbsp;&nbsp;0</i>";
+                                        } else {
+                                            echo "<a class='btn btn-outline-primary' href='" . base_url('booking/tambahBooking/' . $buku->id) . "'><i class='fas fa-shopping-cart'></i> Booking</a>";
+                                        }
+                                        ?>
 
-                                         <a class="btn btn-outlinewarning fas fw fa-search" href="<?= base_url('home/detailBuku/' . $buku->id); ?>"> Detail</a></p> 
+                                         <a class="btn btn-outline-warning fas fw fa-search" href="<?= base_url('home/detailBuku/' . $buku->id); ?>"> Detail</a></p> 
                                  </div> 
                              </div> 
                          </div> <?php } ?> 

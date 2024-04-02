@@ -1,6 +1,6 @@
 <?php 
 //Test123
-//Test123lagi
+//Test123lagii
 class Home extends CI_Controller 
 { 
     function __construct() 
